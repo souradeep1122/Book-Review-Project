@@ -157,7 +157,9 @@ body{
     flex-direction: column;
 }
 .book-dtl w{
-    font-size: 0.7rem;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    color: rgb(86, 86, 86);
     width: 60vw;
     
 }
