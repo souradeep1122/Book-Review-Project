@@ -171,8 +171,13 @@ body{
 .book-dtl x{
     font-size: 1rem;
     width: 60vw;
-    
-   
+}
+.book-dtl y{
+    font-size: 0.7rem;
+    display: flex;
+    margin-right: 30px;
+    color: goldenrod;
+    justify-content: flex-end;
 }
 .book-dtl x i{
     color: goldenrod;
