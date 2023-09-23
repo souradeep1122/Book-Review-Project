@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Asap&family=Montserrat:wght@300&display=swap');
+
+
 *{
     
     color: var(--colour);
@@ -58,46 +62,82 @@ body{
 
 }
 
-.nav-right a,.nav-left a{
+.nav-right input{
+    width: 110px;
+    border-radius: 10px;
+    
+    color: black;
+    border: solid;
+    padding: 3px 5px;
     text-decoration: none;
-    
-    
-
-}
-
-
-/*cover page*/
-.cover-page{
-   
-   
-   
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-   
-
-    
-    
-}
-.cover-top{
-    width: 90vw;
-    padding: 50px 0px;
-    
-    
-   
-}
-.cover-top img{
-    width: 100%;
-}
-.cover-middle{
-   
-    font-size: 1.5rem;
-    color: rgb(14, 14, 10);
-    font-weight: 600;
     text-transform: capitalize;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+    
 
 }
+.book-review{
+    margin-top: 10px;
+    height: 100vh;
+    width: 97vw;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    
+   
+  
+
+}
+.book-review img{
+    height: 43%;
+    width: 60%;
+    object-fit: cover;
+}
+
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 40vh;
+    border-radius: 2px;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    background-color: rgb(219, 218, 217);
+   
+    text-transform: capitalize;
+    padding: 10px 10px;
+}
+.title z{
+    font-size: 1.5rem;
+    font-weight: 600;
+    background-color: transparent;
+    
+    font-family: 'Montserrat', sans-serif;
+}
+.title y span{
+    font-weight: 600;
+    color: black;
+    background-color: transparent;
+}
+.title y{
+    color: goldenrod;
+    background-color: transparent;
+}
+.title i, .title a{
+    background-color: transparent;
+}
+.title button{
+    border: solid;
+    border-color: black;
+    border-radius: 2px;
+    background-color: goldenrod;
+}
+
+
+
 
 /*reviews*/
 .reviews{
@@ -208,68 +248,6 @@ body{
 .reviewd-by m{
     color: goldenrod;
 }
-
-
-
-
-/*footer*/
-.footer{
-    background-color: rgb(237, 237, 212);
-    
-    height: 40vh;
-    padding: 10px 10px;
-   
-
-}
-.services{
-    background-color: transparent;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-.services h, .about-us h{
-    background-color: transparent;
-    font-size: 1.33rem;
-    text-transform: capitalize;
-    font-weight: 600;
-    color: rgb(43, 40, 35);
-}
-.services a, .about-us a{
-    background-color: transparent;
-    font-size: 0.9rem;
-    text-decoration: none;
-    text-transform: capitalize;
-    color: rgb(83, 68, 39);
-
-}
-.about-us{
-    display: flex;
-    background-color: transparent;
-    flex-direction: column;
-    gap: 10px;
-}
-.links, .links i, .links a{
-    display: flex;
-    color: black;
-    flex-direction: row;
-    background-color: transparent;
-    gap: 5px;
-    font-size: 1.6rem;
-    justify-content: center;
-    text-decoration: none;
-}
-.copywright{
-    transform: translateY(10px);
-}
-.copywright, .copywright i{
-    display: flex;
-    
-   
-    justify-content: center;
-    background-color: transparent;
-    color: black;
-}
-
 
 
 
