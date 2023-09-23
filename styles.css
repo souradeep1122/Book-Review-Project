@@ -112,7 +112,7 @@ body{
 
 }
 .heading{
-    color: rgb(2, 84, 84);
+    color: rgb(2, 88, 88);
 }
 .books{
     height: 33vh;
@@ -165,16 +165,19 @@ body{
 }
 .book-dtl h, .book-dtl a{
     width: 60vw;
+    text-transform: capitalize;
     font-size: 1.2rem;
     text-decoration: none;
 
 }
 .book-dtl x{
     font-size: 1rem;
+    text-transform: capitalize;
     width: 60vw;
 }
 .book-dtl y{
     font-size: 0.7rem;
+    text-transform: capitalize;
     display: flex;
     margin-right: 30px;
     color: goldenrod;
@@ -193,12 +196,14 @@ body{
 
 .summary{
     font-size: 0.8rem;
+    text-transform: capitalize;
     height: 10vh;
     
     
 }
 .reviewd-by{
     font-size: 0.9rem;
+    text-transform: capitalize;
    
    
 }
