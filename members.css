@@ -2,12 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Asap&family=Montserrat:wght@300&display=swap');
 
 
-*{
-    
-    color: var(--colour);
-    background-color: var(--background-color);
-    font-family: var(--font-family);
-}
+
 
     
 
@@ -38,6 +33,12 @@ body{
   
 
 }
+.members m{
+    font-size: 1.7rem;
+    font-weight: 600;
+    
+    
+}
 .div{
     display: flex;
     flex-direction: row;
@@ -62,7 +63,7 @@ body{
 .person1 k{
     color: black;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 .members c{
     font-size: 0.8rem;
