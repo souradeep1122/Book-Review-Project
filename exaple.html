@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Generate HTML Files</title>
+  </head>
+  <body>
+    <div>
+      <h2>Generate HTML Files</h2>
+      <button id="generateButton">Generate and Download HTML Files</button>
+    </div>
+
+    <script>
+      // Sample data for books (you can replace this with your data)
+      const booksData = [
+        {
+          img: "book1.jpg",
+          name: "Book 1",
+          details: "This is the details of Book 1.",
+        },
+        {
+          img: "book2.jpg",
+          name: "Book 2",
+          details: "This is the details of Book 2.",
+        },
+      ];
+
+      // Function to generate and download an HTML file
+      function generateAndDownloadHTML(book, index) {
+        const htmlContent = `
+                <!DOCTYPE html>
+                <html>
+                <head>
+                    <title>${book.name}</title>
+                </head>
+                <body>
+                    <h1>${book.name}</h1>
+                    <img src="${book.img}" alt="${book.name}">
+                    <p>${book.details}</p>
+                </body>
+                </html>
+            `;
+
+        // Create a Blob from the HTML content
+        const blob = new Blob([htmlContent], { type: "text/html" });
+
+        // Create a URL for the Blob
+        const url = URL.createObjectURL(blob);
+
+        // Create a download link
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = `books${index}.html`;
+
+        // Trigger a click event to start the download
+        a.click();
+
+        // Clean up by revoking the Blob URL
+        URL.revokeObjectURL(url);
+      }
+
+      // Attach a click event to the "Generate and Download" button
+      const generateButton = document.getElementById("generateButton");
+      generateButton.addEventListener("click", () => {
+        booksData.forEach((book, index) => {
+          generateAndDownloadHTML(book, index);
+        });
+      });
+    </script>
+  </body>
+</html>
